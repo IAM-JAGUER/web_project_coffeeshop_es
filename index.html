@@ -63,12 +63,96 @@
     <main class="main content">
       <!-- SECCIÓN: RESERVA -->
       <section id="reservation" class="reservation">
-        
+        <h2 class="reservation-title">Reservar una mesa</h2>
+        <form class="reservation-form">
+          <fieldset class="form-fieldset">
+            <label class="form-label">
+              Nombre *
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Nombre"
+                required
+              />
+            </label>
+            <label class="form-label">
+              Número de comensales *
+              <input
+                type="number"
+                class="form-input"
+                placeholder="1-8"
+                required
+              />
+            </label>
+            <label class="form-label">
+              Fecha y hora *
+              <input
+                type="datetime-local"
+                class="form-input"
+                required
+              />
+            </label>
+            <label class="form-label">
+              Tu correo electrónico *
+              <input
+                type="email"
+                class="form-input"
+                placeholder="email@email.com"
+                required
+              />
+            </label>
+          </fieldset>
+          <button type="submit" class="form-button">Reservar una mesa</button>
+          <label class="form-checkbox-label">
+            <input
+              type="checkbox"
+              class="form-checkbox"
+              required
+            />
+            Acepto los términos de uso
+          </label>
+        </form>
       </section>
     </main>
 
     <!-- PIE DE PÁGINA -->
     <footer id="contacts" class="footer">
+      <div class="footer-left">
+        <div class="footer-logo-container">
+          <div class="footer-circle"></div>
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="Logotipo Triple Espresso"
+            class="footer-logo"
+          />
+        </div>
+        <p class="footer-copyright">© 2026 Tu nombre</p>
+      </div>
+      <div class="footer-socials">
+        <h3 class="footer-socials-title">Redes sociales</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="#" class="footer-link">
+              <img
+                src="./images/facebook_white.svg"
+                alt="Facebook"
+                class="footer-social-icon"
+              />
+              Facebook
+            </a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="footer-link">
+              <img
+                src="./images/instagram_white.svg"
+                alt="Instagram"
+                class="footer-social-icon"
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
